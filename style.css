@@ -6,7 +6,7 @@
 }
 
 .upper-grid {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: grid;
     grid-template-columns: 250px 1fr 1fr 1fr;
@@ -165,5 +165,165 @@
     background-color: #0288d1;
 }
 
+/* main starts here */
+
+.main{
+    background-color: rgba(226,232,240,255);
+    grid-area: 2 / 2 / 6 / 5;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    padding: 30px 20px 0px 20px;
+}
+
+/* project start here */
+
+.project-display{
+    grid-area: 1/1/3/2;
+    /* background-color: white; */
+}
+.phead{
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.psect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    gap: 20px;
+    padding-right: 20px;
+    /* width: 100% ;
+    height: 100%; */
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: white;
+    /* padding: 10px 20px 10px 20px; */
+    padding: 20px;
+    /* border: 2px solid black; */
+    border-left: 10px solid orange;
+    border-radius: 5px;
+    height: 155px;
+
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+}
+.project-title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.project-text{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(88, 88, 88);
+
+}
+.project-icons{
+    align-self: flex-end;
+}
+
+.project-icons > i:hover {
+    cursor: pointer;
+}
+
+/* Announcement starts here */
+
+.announcement {
+    grid-area: 1/2/2/3;
+}
+.ahead{
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.asect{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px 20px 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+    gap: 5px;
+
+}
+.acc{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.mt5{
+    margin-top: 5px;
+}
+
+.acc-title{
+    font-size: 13px;
+    font-weight: 600;
+}
+.acc-text{
+    font-size: 11px;
+    font-weight: 400;
+    color: rgb(88, 88, 88);
+
+}
 
 
+/* trending start here */
+.trending{
+    grid-area: 2/2/3/3;
+}
+.thead{
+    font-weight: 500;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.tsect{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px rgb(175, 175, 175);
+
+}
+
+.user{
+    display: flex;
+    gap: 10px;
+}
+
+.userpic{
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+.username{
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+.userquote{
+    font-size: 12px;
+    color: rgb(88, 88, 88);
+
+}
